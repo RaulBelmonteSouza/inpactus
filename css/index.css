@@ -1,0 +1,362 @@
+body{
+    margin-top: 106px;
+}
+@font-face {
+    font-family: "Azonix";
+    src: url("../fonts/Azonix.otf");
+}
+.azonix{
+    font-family: "Azonix" !important;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a:hover{
+    text-decoration: none !important;
+}
+a{
+    outline: none !important;
+}
+
+.indent{
+    text-indent: 1.5em;
+}
+.brand{
+    max-width: 200px;
+}
+
+/*menu*/
+.menu-principal{
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+.menu{
+    background-color: #fff;
+}
+.menu li{
+    padding: 10px;
+    margin-left: 5px;
+}
+.menu li a{
+    color: #000;
+}
+
+.menu li a:hover{
+    color: #ff0000;
+}
+
+.orcamento{
+    background-color: #FF0000;
+    border-radius: 0.50rem;
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+.orcamento:hover{
+    background-color: #FF0000;
+    opacity: 0.8;
+    border-radius: 0;
+    transition: 0.3s;
+}
+/*Abertura*/
+.abertura{
+    background-image: url("../img/capa-principal.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    color: #fff;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/*body*/
+
+.abertura-conteudo{
+    background-color: rgba(0,0,0,0.7);
+    min-height: 600px;
+}
+.abertura-conteudo h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+.abertura-conteudo h2{
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px #000;
+    font-style: oblique;
+}
+.abertura-conteudo h3{
+    text-shadow: 1px 1px 1px #000;
+}
+.btn-orcamento{
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 25rem;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+.btn-orcamento:hover{
+    background-color: #fff;
+    color: #ff0000 !important;
+    border: 1px solid #ff0000;
+    transition: 0.4s;
+}
+
+/*sobre nos*/
+#sobre-nos{
+    background-color: #F0F0F0;
+}
+#sobre-nos h4{
+    color: #000;
+}
+#sobre-nos h2{
+    color: #ff0000;
+}
+#sobre-nos h2 span{
+    color: #4D5C69;
+}
+#sobre-nos p span{
+    font-size: 0.9rem;
+}
+/*nossos servicos*/
+.titulo-servicos{
+    font-size: 2.2rem;
+}
+
+.servicos h3{
+    color: #ff0000 !important;
+    font-variant: small-caps;
+}
+
+.sv-box{
+    border: 1px solid rgba(0,0,0,0.6);
+    transition: 0.3s;
+    border-radius: 6% 0 6% 0;
+}
+.sv-box i,p,h5{
+    color: #000;
+    transition: 0.3s;
+}
+.barra-card{
+    width: 100px !important;
+    height: 5px !important;
+    background-color: #ff0000;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+.sv-box:hover{
+    border: 1px solid #ff0000;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.sv-box:hover i{
+    color: #ff0000;
+    transition: 0.3s;
+}
+.sv-box:hover h5{
+    color: #ff0000;
+    transition: 0.3s;
+}
+.sv-box:hover .barra-card{
+    transition: 0.5s;
+    transform: scaleX(0.8);
+}
+
+/*Clientes*/
+#clientes h3{
+    color: #ff0000;
+    font-variant: small-caps;
+}
+.logo-aesb{
+    max-width: 200px;
+    max-height: 200px;
+}
+.list-aesb li{
+    color: #000 !important;
+}
+
+/*solicitacaoOrcamento*/
+
+#contato{
+    background-color: #ff0000;
+}
+#contato h2{
+    color: #fff;
+    font-variant: small-caps;
+}
+.contato a{
+    color: #ff0000;
+    font-weight: bold;
+    opacity: 0.8;
+}
+/*Formulário para contato*/
+.form-contato{
+    background-color: #fff;
+}
+#ul-contato li a{
+    border-radius: 0;
+    color: #ff0000;
+
+}
+#ul-contato li .active{
+   color: #ff0000;
+    border-top: 1px solid #ff0000;
+    border-right: 1px solid #ff0000;
+    border-left: 1px solid #ff0000;
+}
+
+.input{
+    display: block;
+    width: 50%;
+    height: 25px;
+    border-bottom-style: solid;
+    border-color: #CCCCCC;
+    border-width: 0px 0px 1px 0px;
+    transition:width 0.4s ease-in-out;
+    font-size: 1.4rem;
+}
+.input:focus{
+    width: 100%;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+.select{
+    display: block;
+    width: 50%;
+    border-bottom-style: solid;
+    border-color: #CCCCCC;
+    border-width: 0px 0px 1px 0px;
+    transition:width 0.4s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.text-area{
+    display: block;
+    width: 50%;
+    border-bottom-style: solid;
+    border-color: #CCCCCC;
+    border-width: 0px 1px 1px 0px;
+    transition:width 0.4s ease-in-out;
+    font-size: 1.4rem;
+}
+.text-area:focus{
+    width: 100%;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+.btn-submit-contato{
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.50rem;
+    font-size: 0.98rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.btn-submit-contato:hover{
+    opacity: 0.9;
+    border-radius: 0;
+    transition: 0.3s;
+}
+.btn-submit-orcamento{
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.50rem;
+    font-size: 0.98rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+.btn-submit-orcamento:hover{
+    opacity: 0.9;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+/*rodapé*/
+#rodape{
+}
+.logo-rodape{
+    max-width: 200px;
+}
+#direitos{
+    font-size: 0.7rem;
+}
+#direitoss{
+    font-size: 0.7rem;
+}
+
+#scroll-top{
+    z-index: 2;
+    cursor: pointer;
+    border-width: 2px 2px 0px 2px;
+    border-color: #fff;
+    border-style: solid;
+    color: #fff !important;
+    background-color: #ff0000;
+    right: 10px;
+    bottom: 1px;
+    border-radius: 0.25rem 0.25rem 0 0;
+    display: block;
+}
+
+/*mensagens de erro em formulário*/
+.error{
+    color: #ff0000;
+}
+
+#spinner{
+    display: none;
+}
+#msg-sucesso{
+    display: none;
+}
+#msg-erro{
+    display: none;
+}
+
+#spinner-orcamento{
+    display: none;
+}
+#msg-sucesso-orcamento{
+    display: none;
+}
+#msg-erro-orcamento{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .abertura-conteudo h1{
+        font-size: 2.5rem;
+    }
+    .abertura-conteudo h2{
+        font-size: 1.4rem;
+    }
+    .abertura-conteudo h3{
+
+    }
+    .input{
+        width: 70%;
+    }
+    .text-area{
+        width: 100%;
+    }
+    .select{
+        width: 100%;
+    }
+}
