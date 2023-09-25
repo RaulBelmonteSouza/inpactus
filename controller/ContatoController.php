@@ -19,7 +19,7 @@ if (!empty($_POST['acao']) and $_POST['acao'] == 'contato'){
     if ($contato->insert()){
 
         /*REDIRECIONANDO DADOS PARA A INPACTUS*/
-        $senha = "gremio91756972";
+        $senha = "xxx";
         $mailer = new \PHPMailer\PHPMailer\PHPMailer();
         $mailer->isSMTP();
         $mailer->CharSet = "utf8";
@@ -53,7 +53,7 @@ if (!empty($_POST['acao']) and $_POST['acao'] == 'contato'){
         /*Enviando e-mail para a inpactus*/
         if ($mailer->send()){
             /*ENVIANDO E-MAIL DE CONFIRMAÇÃO AO CLIENTE*/
-            $senha = "gremio91756972";
+            $senha = "xxx";
             $mailer = new \PHPMailer\PHPMailer\PHPMailer();
             $mailer->isSMTP();
             $mailer->CharSet = "utf8";
@@ -66,7 +66,6 @@ if (!empty($_POST['acao']) and $_POST['acao'] == 'contato'){
             $mailer->Password = $senha;
             $mailer->FromName = "Inpactus Tecnologia.";
             $mailer->From = "inpactustecnologia@gmail.com";
-            //$mailer->addAddress("contatoaesb@gmail.com");
             $mailer->addAddress($contato->getEmail());
             $mailer->isHTML(true);
             $mailer->Subject = "Agradecimento - Recebemos sua mensagem ". $contato->getNome();
